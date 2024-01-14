@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ticker</h1>
+    <div class="container">
+        <div id="score_display">
+            0
+        </div>
+        
+        <div id="ticker_area_container">
+                <details id="penalty_container">
+                    <summary id="penalty_level_display">
+                        Penalty Level: 0 (click me)
+                    </summary>
+                    <span style="font-style: italic;" id="penalty_effect_display">
+                        Effect: 1
+                    </span>
+                </details>
+
+            <div id="ticker_bar">
+                <div id="ticker_perfect_zone"></div>
+                <div id="ticker_pointer"></div>
+            </div>
+            
+            <button id="ticker_button">
+                Tick me!
+            </button>
+        </div>
+
+        <div class="upgrade_container">
+            <div class="upgrade" id="base_click_score_upgrade">
+                <div class="upgrade_name">Base Click Score</div>
+                <div class="upgrade_effect" id="base_click_score_upgrade_description"></div>
+                <button class="upgrade_button" id="base_click_score_upgrade_button"></button>
+            </div>
+    
+            <div class="upgrade" id="perfect_multiplier_upgrade">
+                <div class="upgrade_name">Perfect Multiplier</div>
+                <div class="upgrade_effect" id="perfect_multiplier_upgrade_description"></div>
+                <button class="upgrade_button" id="perfect_multiplier_upgrade_button"></button>
+            </div>
+            
+            <div class="upgrade" id="perfect_zone_width_upgrade">
+                <div class="upgrade_name">Perfect Zone Width</div>
+                <div class="upgrade_effect" id="perfect_zone_width_upgrade_description"></div>
+                <button class="upgrade_button" id="perfect_zone_width_upgrade_button"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ticker.js"></script>
+</body>
+</html>
